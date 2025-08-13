@@ -91,6 +91,82 @@ a:hover {
   font-size: 0.95rem;
 }
 
+/* Experience section */
+.experience .job {
+  margin-bottom: 1.5rem;
+}
+
+.experience .job p {
+  margin: 0.25rem 0 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Projects section */
+.projects .project {
+  margin-bottom: 2rem;
+}
+
+.projects h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.projects .project p {
+  margin: 0 0 0.75rem 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  background: var(--muted);
+  color: var(--bg);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* Education section */
+.education .degree {
+  margin-bottom: 1rem;
+}
+
+.education .degree p {
+  margin: 0.25rem 0 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Certifications section */
+.certifications .cert {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Features section */
+.features .feature {
+  margin-bottom: 0.75rem;
+}
+
+.features .feature a {
+  font-weight: 500;
+}
+
+/* Contact section */
+.contact p {
+  margin: 0;
+  font-weight: 500;
+}
+
 @media (max-width: 640px) {
   .container { 
     margin: 4rem auto; 
@@ -99,5 +175,14 @@ a:hover {
   .links a {
     display: inline-block;
     margin-bottom: 0.5rem;
+  }
+  
+  .tech-stack {
+    gap: 0.4rem;
+  }
+  
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
   }
 }

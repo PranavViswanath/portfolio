@@ -25,40 +25,36 @@ portfolio/
 └── README.md           # This file
 ```
 
+## Content Sources
+
+This site's content is sourced from:
+- **GitHub Profile**: [github.com/PranavViswanath](https://github.com/PranavViswanath) - Project repositories and technical details
+- **LinkedIn Profile**: [linkedin.com/in/pranav-viswanath](https://linkedin.com/in/pranav-viswanath) - Professional experience, education, and certifications
+
 ## Customization
 
 ### 1. Personal Information
 
-Update the following in `index.html`:
-
-- **Name**: Change "Pranav" to your name
-- **Location**: Update "Westmont, IL" to your city
-- **Age**: Modify "21 y/o" to your age
-- **Current role**: Replace "your role at your company" with your actual position
-- **Past work**: Update the domains you've worked in
-- **Community role**: Replace "your org" with your organization details
+The site is currently configured for Pranav Viswanath with:
+- **Current Role**: ML Engineer at Meta Reality Labs
+- **Location**: Westmont, IL
+- **Education**: Georgia Tech CS (4.0 GPA, Denning T&M minor)
+- **Experience**: Perplexity, Delta Air Lines, GreenAI (Founder), Georgia Tech ML Research
 
 ### 2. Social Links
 
-Update all the placeholder links in the "links" section:
-
-```html
-<a href="https://substack.com/@YOUR" target="_blank" rel="noopener noreferrer">substack</a>
-<a href="https://www.linkedin.com/in/YOUR" target="_blank" rel="noopener noreferrer">linkedin</a>
-<a href="https://twitter.com/YOUR" target="_blank" rel="noopener noreferrer">twitter</a>
-<a href="https://github.com/YOUR" target="_blank" rel="noopener noreferrer">github</a>
-<a href="https://scholar.google.com/citations?user=YOUR" target="_blank" rel="noopener noreferrer">google scholar</a>
-<a href="mailto:YOUR@domain.com?subject=Hello%20Pranav">email</a>
-```
+Current links are set to:
+- **GitHub**: [github.com/PranavViswanath](https://github.com/PranavViswanath)
+- **LinkedIn**: [linkedin.com/in/pranav-viswanath](https://linkedin.com/in/pranav-viswanath)
+- **Email**: pviswanath04@gmail.com
 
 ### 3. SEO & Metadata
 
-Update the following in `index.html`:
-
+Current configuration:
 - **Page title**: "Pranav Viswanath — Building AI Systems"
-- **Meta description**: Your brief description
-- **Open Graph URL**: Your actual domain
-- **Favicon**: Currently uses a brain emoji (🧠) - you can replace with your own
+- **Meta description**: ML Engineer at Meta Reality Labs building deep learning systems for VR/AR reliability
+- **Open Graph URL**: https://pranavviswanath.github.io/portfolio/
+- **Favicon**: Brain emoji (🧠)
 
 ### 4. Styling
 
