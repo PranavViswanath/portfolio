@@ -20,152 +20,354 @@
     
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="container">
-        <div class="meta">
-            Westmont, IL, <span id="time">--:--</span>
-        </div>
-
-        <h1>I'm Pranav.</h1>
-
-        <p class="lede">
-            Building AI Systems
-        </p>
-
-        <p>i'm 21 y/o and based in Westmont, IL.</p>
-
-        <p>
-            ML Engineer at <a href="https://about.meta.com/reality-labs/" target="_blank" rel="noopener noreferrer">Meta Reality Labs</a>, 
-            building deep learning systems for VR/AR device reliability and signal integrity.
-        </p>
-
-        <h3>experience</h3>
-        <div class="experience">
-            <div class="job">
-                <strong>Meta Reality Labs</strong> — Machine Learning Engineer (May 2025–Present)
-                <p>Deep learning for VR/AR device reliability and signal integrity.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">PV</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="job">
-                <strong>Perplexity</strong> — Growth (Aug 2024–Jan 2025)
-                <p>Campus strategy, developer relations, onboarding to drive research-grade usage.</p>
-            </div>
-            <div class="job">
-                <strong>Delta Air Lines</strong> — Data Engineer (Jan–May 2024)
-                <p>XML-to-SQL ingestion on AWS S3/Glue for air traffic management data.</p>
-            </div>
-            <div class="job">
-                <strong>GreenAI</strong> — Founder (Sep 2023–Apr 2024)
-                <p>Climate-friendly GPU orchestration and carbon accounting for GenAI; $50K pre-seed (Chris Klaus, CREATE-X).</p>
-            </div>
-            <div class="job">
-                <strong>Georgia Tech</strong> — ML Researcher (May 2023–Jan 2024)
-                <p>CNN modeling of human vision/perception.</p>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
+    </nav>
 
-        <h3>selected projects</h3>
-        <div class="projects">
-            <div class="project">
-                <h4><a href="https://github.com/PranavViswanath/cascade" target="_blank" rel="noopener noreferrer">Cascade</a></h4>
-                <p>Multi-agent research assistant (NVIDIA NeMoTron + Perplexity Deep Research) for surfacing high-priority findings.</p>
-                <div class="tech-stack">
-                    <span class="badge">TypeScript</span>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="location">Westmont, IL</span>
+                    <span class="time" id="time">--:--</span>
                 </div>
-            </div>
-            <div class="project">
-                <h4><a href="https://github.com/PranavViswanath/vidquest" target="_blank" rel="noopener noreferrer">VidQuest</a></h4>
-                <p>Q&A over YouTube with timestamped answers.</p>
-                <div class="tech-stack">
-                    <span class="badge">Django</span>
-                    <span class="badge">TypeScript</span>
-                    <span class="badge">PyTorch</span>
-                </div>
-            </div>
-            <div class="project">
-                <h4><a href="https://github.com/PranavViswanath/resident-ai" target="_blank" rel="noopener noreferrer">ResidentAI</a></h4>
-                <p>Palantir AIP app aggregating local news + geospatial safety data for Resident Assistants.</p>
-                <div class="tech-stack">
-                    <span class="badge">Palantir AIP</span>
-                    <span class="badge">Python</span>
-                </div>
-            </div>
-            <div class="project">
-                <h4><a href="https://github.com/PranavViswanath/wandersync" target="_blank" rel="noopener noreferrer">WanderSync</a></h4>
-                <p>Collaborative travel planner with SOLID/GRASP principles and SonarQube integration.</p>
-                <div class="tech-stack">
-                    <span class="badge">Android/Java</span>
-                    <span class="badge">Firebase</span>
-                </div>
-            </div>
-            <div class="project">
-                <h4><a href="https://github.com/PranavViswanath/literacy-ai" target="_blank" rel="noopener noreferrer">Literacy.AI</a></h4>
-                <p>AI fluency tutor for personalized learning experiences.</p>
-                <div class="tech-stack">
-                    <span class="badge">JavaScript</span>
-                </div>
-            </div>
-            <div class="project">
-                <h4><a href="https://github.com/PranavViswanath/gitawise" target="_blank" rel="noopener noreferrer">GitaWise</a></h4>
-                <p>LLM-generated quizzes/summaries from scraped content.</p>
-                <div class="tech-stack">
-                    <span class="badge">Python</span>
-                    <span class="badge">Jupyter</span>
-                </div>
-            </div>
-            <div class="project">
-                <h4><a href="https://github.com/PranavViswanath/gpt-from-scratch" target="_blank" rel="noopener noreferrer">gpt-from-scratch</a></h4>
-                <p>TinyShakespeare GPT-2 experiments and implementation from scratch.</p>
-                <div class="tech-stack">
-                    <span class="badge">Python</span>
-                    <span class="badge">PyTorch</span>
+                <h1 class="hero-title">
+                    <span class="title-line">I'm Pranav</span>
+                    <span class="title-line highlight">Building AI Systems</span>
+                </h1>
+                <p class="hero-subtitle">
+                    ML Engineer at Meta Reality Labs, crafting deep learning systems for VR/AR reliability. 
+                    Passionate about climate-conscious AI and building technology that serves humanity.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
         </div>
+    </section>
 
-        <h3>education</h3>
-        <div class="education">
-            <div class="degree">
-                <strong>Georgia Institute of Technology</strong> — BS Computer Science (2022–2026)
-                <p>GPA 4.0 • Denning Technology & Management minor (Computing & Business; selective cohort)</p>
-                <p>Honors: Faculty Honors, Dean's List, PURA</p>
-                <p>Activities: Student Ambassador, CREATE-X, HackerHouse, RA, Qurbani Dance, Marching Band</p>
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey in AI and technology</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Machine Learning Engineer</h3>
+                            <span class="company">Meta Reality Labs</span>
+                            <span class="duration">May 2025 – Present</span>
+                        </div>
+                        <p>Building deep learning systems for VR/AR device reliability and signal integrity, ensuring seamless user experiences in the metaverse.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">VR/AR</span>
+                            <span class="tech-tag">Signal Processing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Growth</h3>
+                            <span class="company">Perplexity</span>
+                            <span class="duration">Aug 2024 – Jan 2025</span>
+                        </div>
+                        <p>Campus strategy, developer relations, and onboarding initiatives to drive research-grade usage of AI-powered search.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Developer Relations</span>
+                            <span class="tech-tag">Growth Strategy</span>
+                            <span class="tech-tag">AI Search</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Engineer</h3>
+                            <span class="company">Delta Air Lines</span>
+                            <span class="duration">Jan – May 2024</span>
+                        </div>
+                        <p>XML-to-SQL ingestion on AWS S3/Glue for air traffic management data, optimizing data pipelines for aviation operations.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Data Engineering</span>
+                            <span class="tech-tag">ETL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Founder</h3>
+                            <span class="company">GreenAI</span>
+                            <span class="duration">Sep 2023 – Apr 2024</span>
+                        </div>
+                        <p>Climate-friendly GPU orchestration and carbon accounting for GenAI. Secured $50K pre-seed funding from Chris Klaus and CREATE-X.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Climate Tech</span>
+                            <span class="tech-tag">GPU Orchestration</span>
+                            <span class="tech-tag">Startup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>ML Researcher</h3>
+                            <span class="company">Georgia Tech</span>
+                            <span class="duration">May 2023 – Jan 2024</span>
+                        </div>
+                        <p>CNN modeling of human vision and perception, advancing understanding of neural networks and visual processing.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">Research</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <h3>certifications</h3>
-        <div class="certifications">
-            <div class="cert">AWS Certified Solutions Architect</div>
-            <div class="cert">Cisco Backend Technologies</div>
-        </div>
-
-        <h3>features & posts</h3>
-        <div class="features">
-            <div class="feature">
-                <a href="https://www.perplexity.ai/campus-strategists" target="_blank" rel="noopener noreferrer">Perplexity Campus Strategist</a> — Featured profile
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Selected Projects</h2>
+                <p class="section-subtitle">Showcasing my technical expertise and innovation</p>
             </div>
-            <div class="feature">
-                <a href="https://www.linkedin.com/posts/pranav-viswanath_meta-reality-labs-activity-7171234567890" target="_blank" rel="noopener noreferrer">Joining Meta Reality Labs</a> — LinkedIn announcement
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Cascade</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/PranavViswanath/cascade" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <p>Multi-agent research assistant leveraging NVIDIA NeMoTron and Perplexity Deep Research for surfacing high-priority findings.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">TypeScript</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>VidQuest</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/PranavViswanath/vidquest" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <p>Q&A over YouTube with timestamped answers, making video content more accessible and searchable.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Django</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">PyTorch</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>ResidentAI</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/PranavViswanath/resident-ai" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <p>Palantir AIP app aggregating local news and geospatial safety data for Resident Assistants.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Palantir AIP</span>
+                        <span class="tech-badge">Python</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>WanderSync</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/PranavViswanath/wandersync" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <p>Collaborative travel planner with SOLID/GRASP principles and SonarQube integration.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Android/Java</span>
+                        <span class="tech-badge">Firebase</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Literacy.AI</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/PranavViswanath/literacy-ai" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <p>AI fluency tutor for personalized learning experiences and skill development.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>GitaWise</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/PranavViswanath/gitawise" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <p>LLM-generated quizzes and summaries from scraped content for educational purposes.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Jupyter</span>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <h3>contact</h3>
-        <div class="contact">
-            <p>
-                <a href="mailto:pviswanath04@gmail.com?subject=Hello%20Pranav">pviswanath04@gmail.com</a> • 
-                <a href="https://www.linkedin.com/in/pranav-viswanath" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </p>
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic foundation and achievements</p>
+            </div>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>Georgia Institute of Technology</h3>
+                        <span class="degree">BS Computer Science</span>
+                        <span class="years">2022 – 2026</span>
+                    </div>
+                    <div class="education-details">
+                        <div class="gpa">GPA: 4.0</div>
+                        <div class="minor">Denning Technology & Management minor (Computing & Business)</div>
+                        <div class="honors">
+                            <h4>Honors & Awards</h4>
+                            <ul>
+                                <li>Faculty Honors</li>
+                                <li>Dean's List</li>
+                                <li>PURA Research Award</li>
+                            </ul>
+                        </div>
+                        <div class="activities">
+                            <h4>Activities</h4>
+                            <ul>
+                                <li>Student Ambassador</li>
+                                <li>CREATE-X</li>
+                                <li>HackerHouse</li>
+                                <li>Resident Assistant</li>
+                                <li>Qurbani Dance</li>
+                                <li>Marching Band</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <span class="cert-name">AWS Certified Solutions Architect</span>
+                        </div>
+                        <div class="cert-card">
+                            <span class="cert-name">Cisco Backend Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <h3>links</h3>
-        <div class="links">
-            <a href="/blog">notes</a>
-            <a href="https://github.com/PranavViswanath" target="_blank" rel="noopener noreferrer">github</a>
-            <a href="https://www.linkedin.com/in/pranav-viswanath" target="_blank" rel="noopener noreferrer">linkedin</a>
-            <a href="mailto:pviswanath04@gmail.com?subject=Hello%20Pranav">email</a>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's connect and build something amazing together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:pviswanath04@gmail.com">pviswanath04@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/pranav-viswanath" target="_blank">pranav-viswanath</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🐙</div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/PranavViswanath" target="_blank">PranavViswanath</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <p>Interested in collaborating on AI projects or discussing technology? I'd love to hear from you!</p>
+                    <a href="mailto:pviswanath04@gmail.com?subject=Hello%20Pranav" class="btn btn-primary">Send Message</a>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">PV</div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/PranavViswanath" target="_blank" class="social-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/pranav-viswanath" target="_blank" class="social-link">LinkedIn</a>
+                    <a href="mailto:pviswanath04@gmail.com" class="social-link">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pranav Viswanath. Built with ❤️ and modern web technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
