@@ -428,6 +428,9 @@ body {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .timeline::before {
@@ -446,7 +449,9 @@ body {
   position: relative;
   margin-bottom: var(--space-2xl);
   padding-left: 60px;
-  clear: both;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .timeline-marker {
@@ -470,6 +475,8 @@ body {
   transition: var(--transition-normal);
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: 100%;
 }
 
 .timeline-content:hover {
@@ -927,6 +934,7 @@ body {
   
   .timeline-item {
     padding-left: 45px;
+    width: 100%;
   }
   
   .timeline-marker {
