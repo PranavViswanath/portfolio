@@ -1,0 +1,103 @@
+:root {
+  --bg: #fafafa;
+  --fg: #111;
+  --muted: #555;
+  --link: #0a58ff;
+  --maxw: 700px;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0b0b;
+    --fg: #eee;
+    --muted: #aaa;
+    --link: #7aa2ff;
+  }
+}
+
+* { 
+  box-sizing: border-box; 
+}
+
+html, body { 
+  padding: 0; 
+  margin: 0; 
+  background: var(--bg); 
+  color: var(--fg); 
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 6rem auto;
+  padding: 0 1.25rem;
+}
+
+.meta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 2rem 0;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 6vw, 3.25rem);
+  line-height: 1.1;
+  margin: 0 0 1rem 0;
+  font-weight: 800;
+}
+
+h3 {
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  text-transform: lowercase;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.lede {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.links {
+  margin-top: 0.5rem;
+}
+
+.links a {
+  margin-right: 1rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .container { 
+    margin: 4rem auto; 
+  }
+  
+  .links a {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+}
